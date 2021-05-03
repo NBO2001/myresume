@@ -12,7 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         crossorigin="anonymous"></script>
+    <script>
+        $(window).load(function() {
+     document.getElementById("loading").style.display = "none";
+     document.getElementById("bory-cont").style.display = "inline";
+        });
 
+    </script>
     <style>
         html {
             margin: 0;
@@ -87,6 +93,11 @@
             overflow: auto;
             height: 17rem;
         }
+        #loading{
+            position: absolute;
+            top: 45%;
+            left: 45%;
+        }
 
                 
 
@@ -95,572 +106,603 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <div style="width: 50rem; height: 50rem;" id="loading">
+
+        <button class="btn text-dark btn-outline-danger btn-lg" type="button" disabled>
+            <span class="spinner-border text-warning" role="status" aria-hidden="true"></span>
+            Loading...
+        </button>
+
+    </div>
+
+  
     
-<div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-  <div class="offcanvas-header">
-    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
+    
+    <div id="bory-cont" style="display: none">
 
-    <div class="card" >
-        <img src="imgs/natan.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">NATANAEL BEZERRA DE OLIVEIRA</h5>
-          <p class="card-text">
-            
-            Brasileiro, Solteiro, 19 anos.
-            <br>
-            Endereço: Rua Oiticica, Monte das Oliveiras, CEP: 69093-787 - Manaus, AM.
-            <br>
-            Tel.:
-            <a href="tel:+5592984299662">(92) 98429-9662</a>
-            <br>
-            E-mail: <a href="mailto:natanbezerr63@gmail.com">natanbezerr63@gmail.com</a>
-            </p>
-        </div>
-      </div>
-
-  </div>
-</div>
-
-
-
-    <div class="contennerImgName">
-
-        <div class="title-ct">
-            <h2 class="fw-bold">ABOUT ME</h2>
-            <p class="text-break text-start fs-5">
-                Sou uma pessoa que ama programação, tenho uma grande paixão por PHP. <br>
-                No primeiro ano do Ensino Médio consegui um estágio na Universidade Federal do Amazonas, onde dei meu melhor para aprender e deixar minha marca. <br>
-                Quando meu contrato com a Ufam estava próximo ao fim, comecei a estudar no período da noite e consegui outro estágio no TRE-AM, por alguns meses fiquei em dois estágio. <br>
-                Gosto de inovar, luto para nunca ser uma pessoa medíocre, gosto de deixar a minha marca na vida das pessoas por onde passo. <br>
-                Pretendo em breve cursar uma gradução em ciência da computação para poder atuar na área. <br>
-            </p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Mostrar Informações</button>
-
-            
-        </div>
-    </div>
-
-    <div class="contennerCourses">
-        <h2 class="fw-bold">CERTIFICATIONS</h2>
-        <div class="card-group">
-
-
-                <div class="card text-black bg-light mb-3" style="max-width: 20rem;">
-
-                    <div class="card-header">Instituto Federal de Rondônia</div>
-
-                    <div class="card-body">
-                        
-                        <div class="accordion" id="courseIfro">
-
-                            <div class="accordion-item">
-
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#labelProgSist" aria-expanded="true" aria-controls="collapseOne">
-                                        Programador de Sistemas
-                                    </button>
-                                </h2>
-                                <div id="labelProgSist" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#courseIfro">
-                                    <div class="accordion-body">
-                                        Escrever Texto depois....
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
-
-                    <div class="card-header">Digital Innovation One</div>
-
-                    <div class="card-body">
-
-                        
-                        
-                        <div class="accordion" id="courseIfro">
-
-                            <div class="accordion-item">
-
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#labelDesenAvaPhp" aria-expanded="true" aria-controls="collapseOne">
-                                        Desenvolvimento avançado em PHP
-                                    </button>
-                                </h2>
-                                <div id="labelDesenAvaPhp" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#courseIfro">
-                                    <div class="accordion-body">
-                                        Escrever Texto depois....
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="accordion-item">
-
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#labelArqSist" aria-expanded="true" aria-controls="collapseTwo">
-                                        Arquitetura de Sistemas Avançado
-                                    </button>
-                                </h2>
-                                <div id="labelArqSist" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#courseIfro">
-                                    <div class="accordion-body">
-                                        Escrever Texto depois....
-                                    </div>
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
-
-                    <div class="card-header">Instituto Federal do Rio Grande do Sul</div>
-
-                    <div class="card-body">
-
-                        <div class="accordion" id="courseIfrs">
-
-                            <div class="accordion-item">
-
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Banco de Dados: Fundamentos
-                                    </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#courseIfrs">
-                                    <div class="accordion-body">
-                                        Escrever Texto depois....
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Projeto de Sistemas Web
-                                    </button>
-                                </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#courseIfrs">
-                                    <div class="accordion-body">
-                                        Escrever Texto depois....
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-
-                                <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseThree" aria-expanded="false"
-                                        aria-controls="collapseThree">
-                                        Javascript
-                                    </button>
-                                </h2>
-
-                                <div id="collapseThree" class="accordion-collapse collapse"
-                                    aria-labelledby="headingThree" data-bs-parent="#courseIfrs">
-
-                                    <div class="accordion-body">
-                                       Escrever Texto depois....
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-        </div>
-
-    </div>
-
-    <div class="experienceDiv">
-        <h1 class="fw-bold">EXPERIENCE</h1>
-        <div id="carouselExperience" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-            <div class="carousel-indicators">
-
-              <button type="button" data-bs-target="#carouselExperience" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExperience" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            
+        <div class="offcanvas offcanvas-start show" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-
-                <div class="card rounded mx-auto d-block my-3" style="max-width: 50rem;" >
-                    <img style="max-height: 20rem;max-width: 20rem;" src="imgs/ufam.jpg" class="card-img-top rounded mx-auto d-block" alt="ufam imagem">
-                    <div class="card-body">
-                      <h5 class="card-title fw-bold">Universidade Federal do Amazonas </h5>
+            <div class="offcanvas-body">
         
-                        <p class="card-text text-break">
-                            Desenvolvimento
-                            de
-                            atividades de auxiliar de técnico de
-                            arquivo e desenvolvimento de sistemas.
-                        </p>
-                        
-                    </div>
-                    <ul class="list-group list-group-flush">
+            <div class="card" >
+                <img src="imgs/natan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">NATANAEL BEZERRA DE OLIVEIRA</h5>
+                    <p class="card-text">
+                    
+                    Brasileiro, Solteiro, 19 anos.
+                    <br>
+                    Endereço: Rua Oiticica, Monte das Oliveiras, CEP: 69093-787 - Manaus, AM.
+                    <br>
+                    Tel.:
+                    <a href="tel:+5592984299662">(92) 98429-9662</a>
+                    <br>
+                    E-mail: <a href="mailto:natanbezerr63@gmail.com">natanbezerr63@gmail.com</a>
+                    </p>
+                </div>
+                </div>
+        
+            </div>
+        </div>
+        
+        
+        
+        <div class="contennerImgName">
+        
+            <div class="title-ct">
 
-                        <li class="list-group-item">
-                            
-                            <div class="accordion" id="infoGeralUfam">
-                    
-                                <div class="accordion-item">
-                    
-                                    <h2 class="accordion-header" id="headingOne">
-                    
-                                        <button class="accordion-button collapsed" type="button" 
-                                        data-bs-toggle="collapse" data-bs-target="#collapseInfoGeralUfam" aria-expanded="true" aria-controls="collapseInfoGeralUfam">
-                                            Informações Gerais
-                                        </button>
-                    
-                                    </h2>
-                    
-                                    <div id="collapseInfoGeralUfam" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoGeralUfam">
-                                    
-                                        <div class="accordion-body">
-                    
-                                            <h2>Falta escrever ...</h2>
-                                        
-                                        </div>
-                    
-                                    </div>
-                    
-                                </div>
-                                
-                            </div>
-                    
-                    
-                        </li>
-                    
-                        <li class="list-group-item">
-                                
-                            <div class="accordion" id="accordionTimeLineUfam">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOneUfam">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneUfam" aria-expanded="true" aria-controls="collapseOneUfam">
-                                        Linha do Tempo
-                                    </button>
-                                    </h2>
-                                    <div id="collapseOneUfam" class="accordion-collapse collapse" aria-labelledby="headingOneUfam" data-bs-parent="#accordionTimeLineUfam">
-                                    
-                                        <div class="accordion-body">
-                    
-                                            <h1>Falta escrever</h1>
-                    
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                    
-                    
-                        </li>
-                    
-                        <li class="list-group-item">
-                    
-                            <div class="accordion" id="accordionResultUfam">
-                    
-                                <div class="accordion-item">
-                    
-                                    <h2 class="accordion-header" id="headingResultThree">
-                    
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResultThreeUfam" aria-expanded="true" aria-controls="collapseResultThreeUfam">
-                                            Resultados
-                                        </button>
-                    
-                                    </h2>
-                    
-                                </div>
-                    
-                                <div id="collapseResultThreeUfam" class="accordion-collapse collapse" aria-labelledby="headingResultThree" data-bs-parent="#accordionResultUfam">
-                                    
-                                    <div class="accordion-body">
-                    
-                                        <h1>Falta escrever</h1>
-                    
-                                    </div>
-                    
-                                </div>
-                                    
-                    
-                            </div>
-                    
-                        </li>
-                    </ul>
-                    <div class="card-body">
-                    </div>
-                  </div>
-              </div>
-              
-              <div class="carousel-item">
+                <h2 class="fw-bold">ABOUT ME</h2>
 
-                <div class="card rounded mx-auto d-block my-3" style="max-width: 50rem;" >
-                    <div class="card" >
-                        <img style="max-height: 20rem;max-width: 20rem;" src="imgs/tre.png" class="card-img-top rounded mx-auto d-block" alt="ufam imagem">
-                        <div class="card-body">
-                          <h5 class="card-title fw-bold">Tribunal Regional Eleitoral do Amazonas</h5>
-            
-                            <p class="card-text text-break">
-                                Digitalização e arquivamento de documentos, atendimento ao público, elaboração de
-                                planilhas, relatórios e treinamentos.
-                            </p>
-                            
+                <p class="text-break text-start fs-5">
+                    Sou uma pessoa que ama programação, tenho uma grande paixão por PHP. <br>
+                    No primeiro ano do Ensino Médio consegui um estágio na Universidade Federal do Amazonas, onde dei meu melhor para aprender e deixar minha marca. <br>
+                    Quando meu contrato com a Ufam estava próximo ao fim, comecei a estudar no período da noite e consegui outro estágio no TRE-AM, por alguns meses fiquei em dois estágio. <br>
+                    Gosto de inovar, luto para nunca ser uma pessoa medíocre, gosto de deixar a minha marca na vida das pessoas por onde passo. <br>
+                    Pretendo em breve cursar uma gradução em ciência da computação para poder atuar na área. <br>
+                </p>
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Mostrar Informações</button>
+                    
+            </div>
+        </div>
+        
+        <div class="contennerCourses">
+            <h2 class="fw-bold">CERTIFICATIONS</h2>
+
+            <div class="card-group">
+        
+        
+                <div class="card text-black bg-light mb-3" style="max-width: 20rem;">
+        
+                    <div class="card-header">Instituto Federal de Rondônia</div>
+        
+                            <div class="card-body">
+                                
+                                <div class="accordion" id="courseIfro">
+        
+                                    <div class="accordion-item">
+        
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#labelProgSist" aria-expanded="true" aria-controls="collapseOne">
+                                                Programador de Sistemas
+                                            </button>
+                                        </h2>
+                                        <div id="labelProgSist" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#courseIfro">
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    
+                                </div>
+        
+                            </div>
+        
                         </div>
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item">
-                           
-                            <div class="accordion" id="infoGeral">
-
-                                <div class="accordion-item">
-
-                                  <h2 class="accordion-header" id="headingOne">
-
-                                    <button class="accordion-button collapsed" type="button" 
-                                    data-bs-toggle="collapse" data-bs-target="#collapseInfoGeral" aria-expanded="true" aria-controls="collapseInfoGeral">
-                                      Informações Gerais
-                                    </button>
-                                  </h2>
-
-                                  <div id="collapseInfoGeral" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoGeral">
-                                    
-                                    <div class="accordion-body">
-
-                                        <div class="alert alert-primary" role="alert">
-                                            <strong>Duração: </strong> 2019 - 2020.
+        
+                        <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
+        
+                            <div class="card-header">Digital Innovation One</div>
+        
+                            <div class="card-body">
+        
+                                
+                                
+                                <div class="accordion" id="courseIfro">
+        
+                                    <div class="accordion-item">
+        
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#labelDesenAvaPhp" aria-expanded="true" aria-controls="collapseOne">
+                                                Desenvolvimento avançado em PHP
+                                            </button>
+                                        </h2>
+                                        <div id="labelDesenAvaPhp" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#courseIfro">
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
                                         </div>
-
-                                        <div class="alert alert-warning" role="alert">
-                                            <strong>Tipo de contrato: </strong> Contrato por tempo determinado.
-                                        </div>
-
-                                        <div class="alert alert-primary" role="alert">
-                                            <strong>Vínculo: </strong> Estágio.
-                                        </div>
-
-                                        <div class="alert alert-warning" role="alert">
-                                            <strong>Setores Estágiados: </strong> Diretoria Geral (DG), Cartório da 62º Zona Eleitoral (ZE62).
-                                        </div>
-                                    
+        
                                     </div>
-
-                                  </div>
-
+        
+                                    <div class="accordion-item">
+        
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#labelArqSist" aria-expanded="true" aria-controls="collapseTwo">
+                                                Arquitetura de Sistemas Avançado
+                                            </button>
+                                        </h2>
+                                        <div id="labelArqSist" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#courseIfro">
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                    
                                 </div>
+                            </div>
+        
+                        </div>
+        
+        
+                        <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
+        
+                            <div class="card-header">Instituto Federal do Rio Grande do Sul</div>
+        
+                            <div class="card-body">
+        
+                                <div class="accordion" id="courseIfrs">
+        
+                                    <div class="accordion-item">
+        
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Banco de Dados: Fundamentos
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="headingOne" data-bs-parent="#courseIfrs">
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
+                                        </div>
+        
+                                    </div>
+        
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Projeto de Sistemas Web
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                            data-bs-parent="#courseIfrs">
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+        
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Javascript
+                                            </button>
+                                        </h2>
+        
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#courseIfrs">
+        
+                                            <div class="accordion-body">
+                                                Escrever Texto depois....
+                                            </div>
+        
+                                        </div>
+        
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                        </div>
+        
+        
+                </div>
+        
+            </div>
+        
+            <div class="experienceDiv">
+                <h1 class="fw-bold">EXPERIENCE</h1>
+                <div id="carouselExperience" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        
+                    <div class="carousel-indicators">
+        
+                        <button type="button" data-bs-target="#carouselExperience" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExperience" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+        
+                        <div class="card rounded mx-auto d-block my-3" style="max-width: 50rem;" >
+                            <img style="max-height: 20rem;max-width: 20rem;" src="imgs/ufam.jpg" class="card-img-top rounded mx-auto d-block" alt="ufam imagem">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold">Universidade Federal do Amazonas </h5>
+                
+                                <p class="card-text text-break">
+                                    Desenvolvimento
+                                    de
+                                    atividades de auxiliar de técnico de
+                                    arquivo e desenvolvimento de sistemas.
+                                </p>
                                 
                             </div>
-
-
-                          </li>
-                          <li class="list-group-item">
-                              
-                            <div class="accordion" id="accordionTimeLine">
-                                <div class="accordion-item">
-                                  <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      Linha do Tempo
-                                    </button>
-                                  </h2>
-                                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionTimeLine">
+                            <ul class="list-group list-group-flush">
+        
+                                <li class="list-group-item">
                                     
-                                    <div class="accordion-body">
-
-                                       <div class="d-grid gap-3">
-                                            <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
-                                            data-bs-toggle="popover" title="DG" 
-                                            data-bs-content="Inicio do estágio, com as funções de digitalização de documentos e responder Processos Digitais">
-                                            Novembro de 2019
-                                            </button>
-
-                                            <button style="padding: 0.5rem;margin-bottom: 0.2rem;"  type="button" class="btn btn-lg btn-outline-dark" 
-                                            data-bs-toggle="popover" title="ZE62" 
-                                            data-bs-content="Devido as eleições foi trocado de setor e comecei a atuar no Cartório, com as funções de atender ligações, atendimento ao público, elaboração de planilhas e relatórios.">
-                                            Março de 2020
-                                            </button>
-
-                                            <button style="padding: 0.5rem;margin-bottom: 0.2rem;"  type="button" class="btn btn-lg btn-outline-warning" 
-                                            data-bs-toggle="popover" title="Fim do contrato" 
-                                            data-bs-content="Com a conclusão do ensino médio encerra o contrato.">
-                                            Dezembro de 2020
-                                            </button>
+                                    <div class="accordion" id="infoGeralUfam">
+                            
+                                        <div class="accordion-item">
+                            
+                                            <h2 class="accordion-header" id="headingOne">
+                            
+                                                <button class="accordion-button collapsed" type="button" 
+                                                data-bs-toggle="collapse" data-bs-target="#collapseInfoGeralUfam" aria-expanded="true" aria-controls="collapseInfoGeralUfam">
+                                                    Informações Gerais
+                                                </button>
+                            
+                                            </h2>
+                            
+                                            <div id="collapseInfoGeralUfam" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoGeralUfam">
+                                            
+                                                <div class="accordion-body">
+                            
+                                                    <h2>Falta escrever ...</h2>
+                                                
+                                                </div>
+                            
+                                            </div>
+                            
                                         </div>
-
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                            </div>
-
-
-                          </li>
-                          <li class="list-group-item">
-
-                            <div class="accordion" id="accordionResult">
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingResultThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResultThree" aria-expanded="true" aria-controls="collapseResultThree">
-                                          Resultados
-                                        </button>
-                                      </h2>
-                                </div>
-
-                                <div id="collapseResultThree" class="accordion-collapse collapse" aria-labelledby="headingResultThree" data-bs-parent="#accordionResult">
-                                    
-                                    <div class="row g-0" >
                                         
-                                        <div class="col-sm-6 col-md-2">
-                                            <div id="list-results" class="list-group">
-                                                <a class="list-group-item list-group-item-action" href="#plan-elabo">Elaboração de Planilhas</a>
-                                                <a class="list-group-item " href="#list-invmes">Inovação em treinamentos</a>
-                                                <a class="list-group-item " href="#list-criaApp">Criação de sistemas</a>
+                                    </div>
+                            
+                            
+                                </li>
+                            
+                                <li class="list-group-item">
+                                        
+                                    <div class="accordion" id="accordionTimeLineUfam">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOneUfam">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneUfam" aria-expanded="true" aria-controls="collapseOneUfam">
+                                                Linha do Tempo
+                                            </button>
+                                            </h2>
+                                            <div id="collapseOneUfam" class="accordion-collapse collapse" aria-labelledby="headingOneUfam" data-bs-parent="#accordionTimeLineUfam">
+                                            
+                                                <div class="accordion-body">
+                            
+                                                    <h1>Falta escrever</h1>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                            
+                            
+                                </li>
+                            
+                                <li class="list-group-item">
+                            
+                                    <div class="accordion" id="accordionResultUfam">
+                            
+                                        <div class="accordion-item">
+                            
+                                            <h2 class="accordion-header" id="headingResultThree">
+                            
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResultThreeUfam" aria-expanded="true" aria-controls="collapseResultThreeUfam">
+                                                    Resultados
+                                                </button>
+                            
+                                            </h2>
+                            
+                                        </div>
+                            
+                                        <div id="collapseResultThreeUfam" class="accordion-collapse collapse" aria-labelledby="headingResultThree" data-bs-parent="#accordionResultUfam">
+                                            
+                                            <div class="accordion-body">
+                            
+                                                <h1>Falta escrever</h1>
+                            
+                                            </div>
+                            
+                                        </div>
+                                            
+                            
+                                    </div>
+                            
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="carousel-item">
+        
+                        <div class="card rounded mx-auto d-block my-3" style="max-width: 50rem;" >
+                            <div class="card" >
+                                <img style="max-height: 20rem;max-width: 20rem;" src="imgs/tre.png" class="card-img-top rounded mx-auto d-block" alt="ufam imagem">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Tribunal Regional Eleitoral do Amazonas</h5>
+                    
+                                    <p class="card-text text-break">
+                                        Digitalização e arquivamento de documentos, atendimento ao público, elaboração de
+                                        planilhas, relatórios e treinamentos.
+                                    </p>
+                                    
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                    
+                                    <div class="accordion" id="infoGeral">
+        
+                                        <div class="accordion-item">
+        
+                                            <h2 class="accordion-header" id="headingOne">
+        
+                                            <button class="accordion-button collapsed" type="button" 
+                                            data-bs-toggle="collapse" data-bs-target="#collapseInfoGeral" aria-expanded="true" aria-controls="collapseInfoGeral">
+                                                Informações Gerais
+                                            </button>
+                                            </h2>
+        
+                                            <div id="collapseInfoGeral" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#infoGeral">
+                                            
+                                            <div class="accordion-body">
+        
+                                                <div class="alert alert-primary" role="alert">
+                                                    <strong>Duração: </strong> 2019 - 2020.
+                                                </div>
+        
+                                                <div class="alert alert-warning" role="alert">
+                                                    <strong>Tipo de contrato: </strong> Contrato por tempo determinado.
+                                                </div>
+        
+                                                <div class="alert alert-primary" role="alert">
+                                                    <strong>Vínculo: </strong> Estágio.
+                                                </div>
+        
+                                                <div class="alert alert-warning" role="alert">
+                                                    <strong>Setores Estágiados: </strong> Diretoria Geral (DG), Cartório da 62º Zona Eleitoral (ZE62).
+                                                </div>
+                                            
+                                            </div>
+        
+                                            </div>
+        
+                                        </div>
+                                        
+                                    </div>
+        
+        
+                                    </li>
+                                    <li class="list-group-item">
+                                        
+                                    <div class="accordion" id="accordionTimeLine">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Linha do Tempo
+                                            </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionTimeLine">
+                                            
+                                            <div class="accordion-body">
+        
+                                                <div class="d-grid gap-3">
+                                                    <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
+                                                    data-bs-toggle="popover" title="DG" 
+                                                    data-bs-content="Inicio do estágio, com as funções de digitalização de documentos e responder Processos Digitais">
+                                                    Novembro de 2019
+                                                    </button>
+        
+                                                    <button style="padding: 0.5rem;margin-bottom: 0.2rem;"  type="button" class="btn btn-lg btn-outline-dark" 
+                                                    data-bs-toggle="popover" title="ZE62" 
+                                                    data-bs-content="Devido as eleições foi trocado de setor e comecei a atuar no Cartório, com as funções de atender ligações, atendimento ao público, elaboração de planilhas e relatórios.">
+                                                    Março de 2020
+                                                    </button>
+        
+                                                    <button style="padding: 0.5rem;margin-bottom: 0.2rem;"  type="button" class="btn btn-lg btn-outline-warning" 
+                                                    data-bs-toggle="popover" title="Fim do contrato" 
+                                                    data-bs-content="Com a conclusão do ensino médio encerra o contrato.">
+                                                    Dezembro de 2020
+                                                    </button>
+                                                </div>
+        
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+        
+        
+                                    </li>
+                                    <li class="list-group-item">
+        
+                                    <div class="accordion" id="accordionResult">
+        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingResultThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseResultThree" aria-expanded="true" aria-controls="collapseResultThree">
+                                                    Resultados
+                                                </button>
+                                                </h2>
+                                        </div>
+        
+                                        <div id="collapseResultThree" class="accordion-collapse collapse" aria-labelledby="headingResultThree" data-bs-parent="#accordionResult">
+                                            
+                                            <div class="row g-0" >
+                                                
+                                                <div class="col-sm-6 col-md-2">
+                                                    <div id="list-results" class="list-group">
+                                                        <a class="list-group-item list-group-item-action" href="#plan-elabo">Elaboração de Planilhas</a>
+                                                        <a class="list-group-item " href="#list-invmes">Inovação em treinamentos</a>
+                                                        <a class="list-group-item " href="#list-criaApp">Criação de sistemas</a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-10">
+                                                    <div data-bs-spy="scroll" data-bs-target="#list-results" data-bs-offset="0" class="scrol-result" tabindex="0">
+                                                        
+                                                        <h4 class="fw-bold" id="plan-elabo">Elaboração de Planilhas</h4>
+                                                        <p class="lead">Criei palhinas para o controlhe de mesários usando fórmulas e Excel VBA, as quais geravam relatórios, gráficos e
+                                                            certidões prontas para a assinatura. <br>
+                                                            Deixando o processo mais rápido e eficiênte.
+                                                        </p>
+                                                        <hr>
+                                                        <h4 class="fw-bold" id="list-invmes">Inovação em treinamentos de mesários</h4>
+                                                        <p class="lead">
+                                                            Devido a crise sanitária em que passavamos, sugiri a criação de um canal no youtube no qual publicamos
+                                                            treinamentos para os mesários.
+        
+                                                            <div class="accordion" id="youtVideosAcc">
+                                                                <div class="accordion-item">
+        
+                                                                    <h2 class="accordion-header" id="headingYoutubeOne">
+                                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYoutubeOne" aria-expanded="true" aria-controls="collapseYoutubeOne">
+                                                                        Treinamento para mesários ...
+                                                                    </button>
+                                                                    </h2>
+        
+                                                                    <div id="collapseYoutubeOne" class="accordion-collapse collapse show" aria-labelledby="headingYoutubeOne" data-bs-parent="#youtVideosAcc">
+                                                                    
+                                                                    <div class="accordion-body">
+                                                                        <div class="ratio ratio-4x3">
+                                                                            <iframe src="https://www.youtube.com/embed/b6F6ZN1mu5I" title="Treinamento para mesários, procedimentos com a urna eletrônica." allowfullscreen></iframe>
+                                                                        </div></div>
+        
+                                                                    </div>
+        
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingTwoYoutube">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoYoutbe" aria-expanded="false" aria-controls="collapseTwoYoutbe">
+                                                                        Treinamento de mesários ao vivo.
+                                                                    </button>
+                                                                    </h2>
+                                                                    <div id="collapseTwoYoutbe" class="accordion-collapse collapse" aria-labelledby="headingTwoYoutube" data-bs-parent="#youtVideosAcc">
+                                                                    <div class="accordion-body">
+                                                                        
+                                                                        <div class="ratio ratio-4x3">
+                                                                            <iframe src="https://www.youtube.com/embed/Pb24gBkfzow" title="Treinamento de mesários ao vivo" allowfullscreen></iframe>
+                                                                        </div>
+        
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="accordion-item">
+                                                                    <h2 class="accordion-header" id="headingThreeYoutube">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeYoutbe" aria-expanded="false" aria-controls="collapseThreeYoutbe">
+                                                                        MEDIDAS DE AFASTAMENTO.
+                                                                    </button>
+                                                                    </h2>
+                                                                    <div id="collapseThreeYoutbe" class="accordion-collapse collapse" aria-labelledby="headingThreeYoutube" data-bs-parent="#youtVideosAcc">
+                                                                    <div class="accordion-body">
+        
+                                                                        <div class="ratio ratio-4x3">
+                                                                            <iframe src="https://www.youtube.com/embed/feuDc0L-XzE" title="TREINAMENTO DE MESÁRIOS COM MEDIDAS DE AFASTAMENTO" allowfullscreen></iframe>
+                                                                        </div>
+                                                                    
+                                                                    </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+                                                        </p>
+                                                        <hr>
+                                                        <h4 id="list-criaApp" class="fw-bold"> Criei um sistema</h4>
+                                                        
+                                                        <p>
+                                                            No segundo turno da eleição
+                                                            desenvolvi uma aplicativo para a
+                                                            consulta de eleitor, o qual auxiliava os
+                                                            mesários a procurar a seção eleitoral de
+                                                            eleitores "perdidos".
+        
+                                                            <a href="https://github.com/NBO2001/Sistema_de_pesquisar_eleitor" class="btn btn-primary stretched-link">Veja o Código</a>
+        
+                                                        </p>
+        
+                                                    </div>
+                                                </div>
                                             </div>
                                             
-                                        </div>
-                                        <div class="col-sm-6 col-md-10">
-                                            <div data-bs-spy="scroll" data-bs-target="#list-results" data-bs-offset="0" class="scrol-result" tabindex="0">
-                                               
-                                                <h4 class="fw-bold" id="plan-elabo">Elaboração de Planilhas</h4>
-                                                <p class="lead">Criei palhinas para o controlhe de mesários usando fórmulas e Excel VBA, as quais geravam relatórios, gráficos e
-                                                     certidões prontas para a assinatura. <br>
-                                                    Deixando o processo mais rápido e eficiênte.
-                                                </p>
-                                                <hr>
-                                                <h4 class="fw-bold" id="list-invmes">Inovação em treinamentos de mesários</h4>
-                                                <p class="lead">
-                                                    Devido a crise sanitária em que passavamos, sugiri a criação de um canal no youtube no qual publicamos
-                                                    treinamentos para os mesários.
-
-                                                    <div class="accordion" id="youtVideosAcc">
-                                                        <div class="accordion-item">
-
-                                                          <h2 class="accordion-header" id="headingYoutubeOne">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYoutubeOne" aria-expanded="true" aria-controls="collapseYoutubeOne">
-                                                                Treinamento para mesários ...
-                                                            </button>
-                                                          </h2>
-
-                                                          <div id="collapseYoutubeOne" class="accordion-collapse collapse show" aria-labelledby="headingYoutubeOne" data-bs-parent="#youtVideosAcc">
-                                                           
-                                                            <div class="accordion-body">
-                                                                <div class="ratio ratio-4x3">
-                                                                    <iframe src="https://www.youtube.com/embed/b6F6ZN1mu5I" title="Treinamento para mesários, procedimentos com a urna eletrônica." allowfullscreen></iframe>
-                                                                </div></div>
-
-                                                          </div>
-
-                                                        </div>
-                                                        <div class="accordion-item">
-                                                          <h2 class="accordion-header" id="headingTwoYoutube">
-                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoYoutbe" aria-expanded="false" aria-controls="collapseTwoYoutbe">
-                                                                Treinamento de mesários ao vivo.
-                                                            </button>
-                                                          </h2>
-                                                          <div id="collapseTwoYoutbe" class="accordion-collapse collapse" aria-labelledby="headingTwoYoutube" data-bs-parent="#youtVideosAcc">
-                                                            <div class="accordion-body">
-                                                              
-                                                                <div class="ratio ratio-4x3">
-                                                                    <iframe src="https://www.youtube.com/embed/Pb24gBkfzow" title="Treinamento de mesários ao vivo" allowfullscreen></iframe>
-                                                                </div>
-
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                        <div class="accordion-item">
-                                                          <h2 class="accordion-header" id="headingThreeYoutube">
-                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeYoutbe" aria-expanded="false" aria-controls="collapseThreeYoutbe">
-                                                                MEDIDAS DE AFASTAMENTO.
-                                                            </button>
-                                                          </h2>
-                                                          <div id="collapseThreeYoutbe" class="accordion-collapse collapse" aria-labelledby="headingThreeYoutube" data-bs-parent="#youtVideosAcc">
-                                                            <div class="accordion-body">
-
-                                                                <div class="ratio ratio-4x3">
-                                                                    <iframe src="https://www.youtube.com/embed/feuDc0L-XzE" title="TREINAMENTO DE MESÁRIOS COM MEDIDAS DE AFASTAMENTO" allowfullscreen></iframe>
-                                                                </div>
-                                                             
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                    </div>
-
-                                                </p>
-                                                <hr>
-                                                <h4 id="list-criaApp" class="fw-bold"> Criei um sistema</h4>
-                                                
-                                                <p>
-                                                    No segundo turno da eleição
-                                                    desenvolvi uma aplicativo para a
-                                                    consulta de eleitor, o qual auxiliava os
-                                                    mesários a procurar a seção eleitoral de
-                                                    eleitores "perdidos".
-
-                                                    <a href="https://github.com/NBO2001/Sistema_de_pesquisar_eleitor" class="btn btn-primary stretched-link">Veja o Código</a>
-
-                                                </p>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                  
-                             
-
-                                </div>
                                     
-
+        
+                                        </div>
+                                            
+        
+                                    </div>
+        
+                                    </li>
+                                </ul>
+                                <div class="card-body">
+                                </div>
                             </div>
-
-                          </li>
-                        </ul>
-                        <div class="card-body">
+        
                         </div>
+                    
                     </div>
-
-              </div>
-          
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExperience" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExperience" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+                        
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExperience" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExperience" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-              
+
     </div>
+
+
 <script>
 
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
 var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   return new bootstrap.Popover(popoverTriggerEl)
-})
+});
+
+var i = setInterval(function () {
+    
+    clearInterval(i);
+  
+    // O código desejado é apenas isto:
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("bory-cont").style.display = "inline";
+
+}, 4000);
 
 
 
