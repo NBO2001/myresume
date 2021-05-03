@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
+<!-- NBO2001-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,18 +14,39 @@
         crossorigin="anonymous"></script>
 
     <style>
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+        }
         body {
 
             background-color: rgb(231, 214, 214);
+            margin: 0;
+            padding: 0;
+            perspective: 1px;
+            transform-style: preserve-3d;
+            height: 100%;
+            width: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
         }
 
         .contennerImgName {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+
+            box-sizing: border-box;
+            min-height: 100vh;
+            position: relative;
+            width: 100vw;
+            text-align: center;
+            color: white;
+            background-color: #5f6061;
+            overflow-y: scroll;
+        }
+        .title-ct{
             padding: 0.5rem;
-            border-bottom: 0.5px black solid;
-            background-color: #90CBFB;
         }
 
         .contennerImgName img {
@@ -38,15 +59,21 @@
         }
         .contennerCourses{
             padding: 0.5rem;
-            display: flex;
-            flex-direction: column;
-            border-bottom: 0.5px black solid;
-            align-items: center;
-
+            box-sizing: border-box;
+            min-height: 100vh;
+            position: relative;
+            width: 100vw;
+            text-align: center;
+            color: black;
         }
         .experienceDiv{
 
-            max-height: 100%;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            min-height: 100vh;
+            position: relative;
+            width: 100vw;
+            text-align: center;
             background-color: #90CBFB;
             
         }
@@ -100,10 +127,10 @@
 
     <div class="contennerImgName">
 
-        <div>
+        <div class="title-ct">
             <h2 class="fw-bold">ABOUT ME</h2>
-            <p class="text-break">
-                Sou uma pessoa que ama progração, tenho uma grande paixão por PHP. <br>
+            <p class="text-break text-start fs-5">
+                Sou uma pessoa que ama programação, tenho uma grande paixão por PHP. <br>
                 No primeiro ano do Ensino Médio consegui um estágio na Universidade Federal do Amazonas, onde dei meu melhor para aprender e deixar minha marca. <br>
                 Quando meu contrato com a Ufam estava próximo ao fim, comecei a estudar no período da noite e consegui outro estágio no TRE-AM, por alguns meses fiquei em dois estágio. <br>
                 Gosto de inovar, luto para nunca ser uma pessoa medíocre, gosto de deixar a minha marca na vida das pessoas por onde passo. <br>
