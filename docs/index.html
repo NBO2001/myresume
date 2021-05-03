@@ -93,10 +93,10 @@
             overflow: auto;
             height: 17rem;
         }
-        #loading{
-            position: absolute;
-            top: 45%;
-            left: 45%;
+       
+        .btn-loading{
+            min-width: 100vw;
+            min-height: 100vh;
         }
 
                 
@@ -109,7 +109,7 @@
 
     <div style="width: 50rem; height: 50rem;" id="loading">
 
-        <button class="btn text-dark btn-outline-danger btn-lg" type="button" disabled>
+        <button class="btn text-dark btn-outline-danger btn-lg btn-loading" type="button" disabled>
             <span class="spinner-border text-warning" role="status" aria-hidden="true"></span>
             Loading...
         </button>
@@ -162,6 +162,9 @@
                     Quando meu contrato com a Ufam estava próximo ao fim, comecei a estudar no período da noite e consegui outro estágio no TRE-AM, por alguns meses fiquei em dois estágio. <br>
                     Gosto de inovar, luto para nunca ser uma pessoa medíocre, gosto de deixar a minha marca na vida das pessoas por onde passo. <br>
                     Pretendo em breve cursar uma gradução em ciência da computação para poder atuar na área. <br>
+                    <div class="alert alert-danger">
+                        Aviso: Esta Pagina está em desenvolvimento!
+                    </div>
                 </p>
 
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Mostrar Informações</button>
@@ -373,7 +376,21 @@
                                             
                                                 <div class="accordion-body">
                             
-                                                    <h2>Falta escrever ...</h2>
+                                                    <div class="alert alert-primary" role="alert">
+                                                        <strong>Duração: </strong> 2018 - 2020.
+                                                    </div>
+
+                                                    <div class="alert alert-warning" role="alert">
+                                                        <strong>Tipo de Contrato: </strong> Contrato por tempo determinado.
+                                                    </div>
+
+                                                    <div class="alert alert-primary">
+                                                        <strong>Vínculo: </strong> Estágio.
+                                                    </div>
+
+                                                    <div class="alert alert-warning">
+                                                        <strong>Setor: </strong> Arquivo Acadêmico da Pró Reitoria de Ensino.
+                                                    </div>
                                                 
                                                 </div>
                             
@@ -398,9 +415,37 @@
                                             <div id="collapseOneUfam" class="accordion-collapse collapse" aria-labelledby="headingOneUfam" data-bs-parent="#accordionTimeLineUfam">
                                             
                                                 <div class="accordion-body">
-                            
-                                                    <h1>Falta escrever</h1>
-                            
+                                                    
+                                                    <div class="d-grid gap-3">
+
+                                                        <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
+                                                        data-bs-toggle="popover" title="Inicio" 
+                                                        data-bs-content="Inicio do estágio, com as funções de arquivamento, organização de documentos e manipulaçao de planilhas">
+                                                        Março de 2018
+                                                        </button>
+
+
+                                                        <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
+                                                        data-bs-toggle="popover" title="VBA" 
+                                                        data-bs-content="Comecei a desenvolver com Excel VBA um 'Sistema' para encontrar matriculas de alunos.">
+                                                        Novembro de 2018
+                                                        </button>
+
+
+                                                        <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
+                                                        data-bs-toggle="popover" title="Matriculas" 
+                                                        data-bs-content="Convidaram-me para participar do atendimento ao público nas matrículas institucionais">
+                                                        Janeiro de 2019
+                                                        </button>
+
+                                                        <button style="padding: 0.5rem;margin-bottom: 0.2rem;" type="button" class="btn btn-lg btn-outline-info" 
+                                                        data-bs-toggle="popover" title="Sistema para digitalização" 
+                                                        data-bs-content="Comecei o sistema para dispolibilizar digitalmente pastas de alunos">
+                                                        Outubro de 2019
+                                                        </button>
+
+                                                    </div>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -480,7 +525,7 @@
                                             <div class="accordion-body">
         
                                                 <div class="alert alert-primary" role="alert">
-                                                    <strong>Duração: </strong> 2019 - 2020.
+                                                    <strong>Duração: </strong> 2019 - 2021.
                                                 </div>
         
                                                 <div class="alert alert-warning" role="alert">
