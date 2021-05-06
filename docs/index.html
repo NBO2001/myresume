@@ -20,91 +20,10 @@
 
     </script>
 
+    <script src="https://kit.fontawesome.com/72fbf34b62.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            font-family: "Monument Extended", Arial, Helvetica, sans-serif;
-        }
-        body {
-
-            background-color: rgb(231, 214, 214);
-            margin: 0;
-            padding: 0;
-            perspective: 1px;
-            transform-style: preserve-3d;
-            height: 100%;
-            width: 100%;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-
-        .contennerImgName {
-
-            box-sizing: border-box;
-            min-height: 100vh;
-            position: relative;
-            width: 100vw;
-            text-align: center;
-            color: white;
-            background-color: #5f6061;
-            overflow-y: scroll;
-        }
-        .title-ct{
-            padding: 0.5rem;
-        }
-
-        .contennerImgName img {
-            width: 200px;
-            height: 200px;
-        }
-
-        p {
-            word-break: keep-all;
-        }
-        .contennerCourses{
-            padding: 0.5rem;
-            box-sizing: border-box;
-            min-height: 100vh;
-            position: relative;
-            width: 100vw;
-            text-align: center;
-            color: black;
-        }
-        .experienceDiv{
-
-            padding: 0.5rem;
-            box-sizing: border-box;
-            min-height: 100vh;
-            position: relative;
-            width: 100vw;
-            text-align: center;
-            background-color: #90CBFB;
-            
-        }
-        .text-experience{
-           
-            overflow: scroll;
-            max-height: 16rem;
-        }
-        .scrol-result{
-            position: relative;
-            overflow: auto;
-            height: 17rem;
-        }
-       
-        .btn-loading{
-            min-width: 100vw;
-            min-height: 100vh;
-        }
-
-                
-
-    </style>
     <title>My Curriculum</title>
 </head>
 
@@ -155,9 +74,7 @@
         </div>
         
         
-        
-        <div class="contennerImgName">
-        
+        <section class="contennerImgName">
             <div class="title-ct">
 
                 <h2 class="fw-bold">ABOUT ME</h2>
@@ -176,10 +93,16 @@
                 <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Mostrar Informações</button>
                     
             </div>
-        </div>
-        
-        <div class="contennerCourses">
+        </section>
+
+        <section>
+
             <h2 class="fw-bold">CERTIFICATIONS</h2>
+            
+        </section>
+    
+        <div class="contennerCourses">
+            
 
             <div class="card-group">
         
@@ -758,7 +681,16 @@
 
     </div>
 
-
+    <section class="links">
+        <ul>
+            <li>
+                <a href="https://bit.ly/3e7bD5o"> <i class="fab fa-github"></i> </a>
+            </li>
+            <li>
+                <a href="https://bit.ly/3e5pk4U"> <i class="fab fa-linkedin-in"></i> </a>
+            </li>
+        </ul>
+    </section>
 <script>
 
 var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
