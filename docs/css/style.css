@@ -3,6 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+body {
+
+    background-color: rgb(231, 214, 214);
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+section
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
 .section-load{
     display:flex;
     justify-content: center;
@@ -32,25 +60,6 @@
 }
 
 
-html {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
-}
-body {
-
-    background-color: rgb(231, 214, 214);
-    margin: 0;
-    padding: 0;
-    perspective: 1px;
-    transform-style: preserve-3d;
-    height: 100%;
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-}
 
 .contennerImgName {
 
@@ -111,44 +120,43 @@ p {
     min-height: 100vh;
 }
 
+
+
 /* Links */
 .links
 {
-
     background-color: #5f6061;
 }
-section
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 100vw;
-    min-height: 100vh;
-}
 
-section ul
+.title-sec{
+    position: absolute;
+    left: 50%;
+    top:0.5rem;
+    transform: translate(-50%);
+}
+.links ul
 {
     position: relative;
     display: flex;
 }
 
-section ul li
+.links ul li
 {
     position: relative;
     list-style: none;
     margin: 0 20px;
     cursor: pointer;
 }
-section ul li a
+.links ul li a
 {
     text-decoration: none;
 }
-ul li a .fab
+.links ul li a .fab
 {
     font-size: 6em;
     color: rgb(218, 209, 209);
 }
-ul li::before
+.links ul li::before
 {
     font-family: fontAwesome;
     position: absolute;
@@ -160,14 +168,14 @@ ul li::before
     transition: 0.5s ease-in-out;
 }
 
-section ul li:nth-child(1)::before
+.links ul li:nth-child(1)::before
 {
     content: '\f09b';
     color: black;
     top: -1.5rem;
     border-bottom: 4px solid black;
 }
-section ul li:nth-child(2)::before
+.links ul li:nth-child(2)::before
 {
     content: '\f0e1';
     top: -1.5rem;
@@ -175,7 +183,22 @@ section ul li:nth-child(2)::before
     border-bottom: 4px solid rgb(47, 200, 211);
 }
 
-section ul li:hover::before
+.links ul li:hover::before
 {
     height: 25vh;
 }
+
+/* Start Slide Cards Courses*/
+
+.certifications-section .swiper-container {
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.certifications-section .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+
+/* End Slide Cards Courses*/
